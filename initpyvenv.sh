@@ -2,10 +2,11 @@
 
 # This script automates the virtual env creation and sourcing into it.
 
-echo "Executing $0 in $PWD"
-
 PWD=$(pwd)
 VENV=$PWD/venv/
+
+echo "Executing $0 in $PWD"
+
 
 if [ -d "$VENV" ]; then
 	echo "$VENV already exists..."
@@ -15,7 +16,6 @@ fi
 if [ ! -d "$VENV" ]; then
   echo "Creating Virtual Environment"
 	python3 -m virtualenv venv
-	
 fi
 
 echo "sourcing into venv/bin/activate"
