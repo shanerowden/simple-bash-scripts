@@ -1,3 +1,5 @@
+# Example
+
 SFUNCTIONS="shell_functions.sh"
 SALIASES=".bash_aliases"
 
